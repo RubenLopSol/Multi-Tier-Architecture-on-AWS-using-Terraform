@@ -8,7 +8,7 @@ resource "aws_security_group" "asg-security-group-web" {
     from_port       = 80
     to_port         = 80
     protocol        = "tcp"
-    security_groups = [aws_security_group.alb-sg-web]
+    security_groups = [aws_security_group.alb-sg-web.id]
   }
 
   ingress {
