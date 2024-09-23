@@ -162,8 +162,12 @@ variable "launch-template-app-name" {
   description = "Value for launch template app name"
   type        = string
 }
+variable "launch-template-web-name" {
+  description = "Value for launch template web name"
+  type        = string
+}
 variable "image-id" {
-  description = "Value for image id"
+  description = "Value for EC2 AMI"
   type        = string
 }
 variable "instance-type" {
@@ -176,5 +180,26 @@ variable "key-name" {
 }
 variable "app-instance-name" {
   description = "Value for App instance Name"
+  type        = string
+}
+variable "web-instance-name" {
+  description = "Value for web instance Name"
+  type        = string
+}
+#! RDS
+variable "db-name" {
+  description = "Value for name of Data Base RDS"
+  type        = string
+}
+variable "instance-class" {
+  description = "Value for instance class"
+  type        = string
+}
+variable "db-username" {
+  description = "Value for DB username"
+  type        = string
+}
+variable "db-password" {
+  description = "Value for DB password"
   type        = string
 }
