@@ -88,8 +88,46 @@ variable "db-subnet2-cidr" {
   description = "Value for DB subnet2 CIDR"
   type        = string
 }
+variable "db-subnet-grp-name" {
+  description = "Value for subnet group name of DB"
+  type        = string
+}
+variable "db-sg-name" {
+  description = "Value for DB security group name"
+  type        = string
+}
 #! IGW
 variable "igw-name" {
   description = "Value for Internet GateWay name"
+  type        = string
+}
+#! Nat GW
+variable "nat-gw-name" {
+  description = "Value for Nat gateway name"
+}
+#! Route Tables
+variable "pub-rt-name" {
+  description = "Value for Public route table name"
+  type        = string
+}
+variable "prib-rt-name" {
+  description = "Value for private route table name"
+  type        = string
+}
+#! ALB 
+variable "alb-app-name" {
+  description = "Value for application load valancer for app"
+  type        = string
+}
+variable "alb-web-name" {
+  description = "Value for application load valancer for web"
+  type        = string
+}
+variable "alb-sg-app-name" {
+  description = "Value for Security group name of ALB app"
+  type        = string
+}
+variable "alb-sg-web-name" {
+  description = "Value for Security group name of ALB web"
   type        = string
 }
