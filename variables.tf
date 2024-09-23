@@ -131,3 +131,50 @@ variable "alb-sg-web-name" {
   description = "Value for Security group name of ALB web"
   type        = string
 }
+#! Target groups
+variable "tg-web-name" {
+  description = "Value for Target group web name"
+  type        = string
+}
+variable "tg-app-name" {
+  description = "Value for Target group app name"
+  type        = string
+}
+#! Auto Scaling Groups
+variable "asg-app-name" {
+  description = "Value for ASG APP name"
+  type        = string
+}
+variable "asg-sg-app-name" {
+  description = "Value for ASG SG APP name"
+  type        = string
+}
+variable "asg-web-name" {
+  description = "Value for ASG WEB name"
+  type        = string
+}
+variable "asg-sg-web-name" {
+  description = "Value for ASG SG WEB name"
+  type        = string
+}
+#! Launch Templates
+variable "launch-template-app-name" {
+  description = "Value for launch template app name"
+  type        = string
+}
+variable "image-id" {
+  description = "Value for image id"
+  type        = string
+}
+variable "instance-type" {
+  description = "Value for instance type on AWS"
+  type        = string
+}
+variable "key-name" {
+  description = "Value for key name"
+  type        = string
+}
+variable "app-instance-name" {
+  description = "Value for App instance Name"
+  type        = string
+}
